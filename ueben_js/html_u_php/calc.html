@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/calc.css">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/seven-segment');
+    </style>
+</head>
+<body>
+    <div id="clac-Container">
+        <input id="display" readonly>
+        <div id="buttons">
+            <button onclick="addToDisplay('+')" class="otherBtn">+</button>
+            <button onclick="addToDisplay('7')" class="numberBtn">7</button>
+            <button onclick="addToDisplay('8')" class="numberBtn">8</button>
+            <button onclick="addToDisplay('9')" class="numberBtn">9</button>
+            <button onclick="addToDisplay('-')" class="otherBtn">-</button>
+            <button onclick="addToDisplay('4')" class="numberBtn">4</button>
+            <button onclick="addToDisplay('5')" class="numberBtn">5</button>
+            <button onclick="addToDisplay('6')" class="numberBtn">6</button>
+            <button onclick="addToDisplay('*')" class="otherBtn">*</button>
+            <button onclick="addToDisplay('1')" class="numberBtn">1</button>
+            <button onclick="addToDisplay('2')" class="numberBtn">2</button>
+            <button onclick="addToDisplay('2')" class="numberBtn">3</button>
+            <button onclick="addToDisplay('/')" class="otherBtn">/</button>
+            <button onclick="addToDisplay('0')" class="numberBtn">0 </button>
+            <button onclick="addToDisplay('.')" class="numberBtn">.</button>
+            <button onclick="calc()"            class="numberBtn">=</button>
+            <button onclick="clearDisplay()"    class="otherBtn">C</button>
+        </div>
+    </div>
+    <script defer src="../js/calc.js"></script>
+</body>
+</html>

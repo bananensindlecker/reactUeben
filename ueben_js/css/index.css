@@ -1,0 +1,15 @@
+body{
+    font-family: Verdana;
+    font-size: 1em;
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+body a {
+    display: block;
+    text-align: center;
+    color: white;
+}
+body a:hover {
+    color: rgb(75, 73, 170);
+}
+

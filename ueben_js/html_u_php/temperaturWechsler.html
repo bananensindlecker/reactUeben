@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/temperaturWechsler.css">
+
+</head>
+<body>
+    <a href="../index.html">zurück</a><br><br>
+
+    <form id="temperaturWechsler">
+        <h1>Temperatur Umwandeln:</h1><br>
+        
+        <input type="number" id="tempIn" value="0"><br>
+        
+        <label for="to°C">Zu °C</label><input type="radio" name="radios" id="to°C" class="radios">
+        <label for="to°F">Zu °F</label><input type="radio" name="radios" id="to°F" class="radios"><br>
+
+        <button type="button" id="Submit" onclick="Umwandeln()">Umwandeln</button><br>
+
+        <p id="output"></p>
+
+
+    </form>
+
+    <script src="../js/temperaturWechsler.js"></script>
+</body>
+</html>

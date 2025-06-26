@@ -1,0 +1,28 @@
+body{
+    font-family: Verdana;
+    font-size: 1em;
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+
+#counter{
+    display: block;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 10em;
+}
+#buttoncontainer{
+    text-align: center;
+}
+.counterBtns{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(7, 204, 188);
+    cursor: pointer;
+    background-color: aqua;
+    transition: 
+        background-color 1s;
+}
+.counterBtns:hover{
+    background-color: rgb(0, 116, 116);
+}

@@ -1,0 +1,55 @@
+h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#stopwatch-container{
+    display: block;
+    justify-self: center;
+    align-content: center;
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    border: 3px black solid;
+    border-radius: 15px;
+    font-family: monospace;
+}
+
+button{
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    border: solid black 2px;
+    cursor: pointer;
+}
+
+#start{
+    background-color: hsl(120, 100%, 25%);
+    color: white;
+    transition: background-color 0.2s;
+}
+#start:hover{
+    background-color: hsl(120, 100%, 20%);
+}
+
+#stop{
+    background-color: hsl(0, 100%, 40%);
+    color: white;
+    transition: background-color 0.2s;
+}
+#stop:hover{
+    background-color: hsl(0, 100%, 35%);
+}
+
+#reset{
+    background-color: hsl(204, 100%, 40%);
+    color: white;
+    transition: background-color 0.2s;
+}
+#reset:hover{
+    background-color: hsl(204, 100%, 35%);
+}
+
+#time{
+    font-size: 3em;
+}

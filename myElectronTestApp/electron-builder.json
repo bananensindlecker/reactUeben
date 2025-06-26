@@ -1,6 +1,7 @@
 {
     "appId":"com.l-post.electrontest",
     "files":["distElectron","distReact"],
+    "extraResources":["distElectron/preload.cjs"],
     "icon":"./desktop-icon",
     "mac":{
         "target":"dmg"

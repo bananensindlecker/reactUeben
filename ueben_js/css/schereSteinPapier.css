@@ -1,0 +1,38 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hsl(0, 0%, 50%);
+}
+#game-box{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+button{
+    height: 120px;
+    width: 120px;
+    border: none;
+    border-radius: 60px;
+    margin: 20px;
+    background-color: hsl(120, 100%, 30%);
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: border, background-color, border-radius, font-weight, 0.3s;
+}
+button:hover{
+    border-radius: 50px;
+    background-color: hsl(120, 100%, 20%);
+    font-weight: bold;
+}
+#ergebnis{
+    font-size: 2em;
+    color: hsl(60, 100%, 40%);
+}

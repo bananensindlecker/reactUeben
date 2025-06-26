@@ -5,9 +5,16 @@ import About from './pages/about';
 import EditProgramm from './pages/editProgram';
 import LoadProgramm from './pages/loadProgram';
 import Layout from './components/Layout';
+import { useEffect } from 'react';
 
 function App() {
 
+  useEffect(()=>{
+    //@ts-ignore
+    window.electron.statistics((stats) =>{
+      console.log(stats)
+    })
+  })
 
   return (
     <>

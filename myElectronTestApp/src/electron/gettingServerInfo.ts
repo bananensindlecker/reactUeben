@@ -1,7 +1,8 @@
 import osUtiles from "os-utils"
 import fs from "fs";
+import { BrowserWindow } from "electron";
 
-export function pollResources() {
+export function pollResources(mainWindow:BrowserWindow) {
     setInterval(async()=>{
         let cpuUsage:any = await getCpuUsage();
         let ramUsage:any =  getRamUsage();
@@ -11,6 +12,13 @@ export function pollResources() {
         ramUsage = ramUsage.toFixed(2) as unknown as number;
         totalStorage = totalStorage.toFixed(2) as unknown as number;
         freeStorage = freeStorage.toFixed(2) as unknown as number;
+
+        mainWindow.webContents.send("statistics",{
+            cpuUsage,
+            ramUsage,
+            totalStorage,
+            freeStorage
+        })
         console.log({cpuUsage,ramUsage,totalStorage,freeStorage})
     },500)
 }

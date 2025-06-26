@@ -1,0 +1,57 @@
+#clac-Container{
+
+    padding: 10px;
+    background-color: hsl(0, 0%, 20%);
+    display: block;
+    width: 320px;
+    height: 500px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+}
+#display{
+    font-family: 'Seven Segment', sans-serifs;
+    font-size: 3em;
+    color: #ffffff;
+    height: 80px;
+    background-color: hsl(0, 0%, 5%);
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+}
+#buttons{
+    width: 320px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+button{
+    cursor:pointer;
+    font-family: 'Seven Segment', sans-serif;
+    font-size: 2em;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+}
+.otherBtn{
+    background-color: hsl(40, 100%, 45%);
+    transition: background-color, 0.2s;
+}
+.otherBtn:hover{
+    background-color: hsl(40, 100%, 30%);
+}
+.numberBtn{
+    background-color: hsl(0, 0%, 40%);
+    transition: background-color, 0.2s;
+}
+.numberBtn:hover{
+    background-color: hsl(0, 0%, 30%);
+}
